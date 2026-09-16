@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        ip=[{Name:'Rvindra', Sports:['Chess','Cricket'],},
+            {Name:'Ravi', Sports:['Cricket','Football'],},
+            {Name:'Rishabh', Sports:['Tabel-Tennis','Football'],},
+        ]
+        function sports_grp(i) {
+            const sports = {};
+            for (const person of i) {
+                for (const sport of person.Sports) {
+                    if (!sports[sport]) {
+                        sports[sport] = [];
+                    }
+                    sports[sport].push(person.Name);
+                }
+            }
+            const op = [];
+            for (const sport in sports) {
+                op.push({ [sport]: sports[sport] });
+            }
+            console.log(op);
+            }
+
+        sports_grp(ip);
+            
+    </script>
+</body>
+</html>

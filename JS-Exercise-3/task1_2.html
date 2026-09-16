@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function masking(mail){
+            place=ip.indexOf("@");
+            mask_char=ip.substring(2,place).length
+            masked_mail=ip.slice(0,2)+"*".repeat(mask_char-1)+ip.slice(place-1,ip.length)
+            console.log(masked_mail)
+        }
+        ip='abcdef@mail.com';
+        // op :  ab***f@mail.com​ 
+        masking(ip);
+    </script>
+</body>
+</html>
