@@ -20,14 +20,15 @@
             { Id: 10, Name: "Alice", Age: 29 }
         ];
         function sortuser(user){
-            return user.sort((a,b)=>{
-                if(a.age!=b.age){
-                    a.age-b.age;
+                    user.sort((a,b)=>{
+                        if(a.Age!=b.Age){
+                            return a.Age-b.Age;
+                        }
+                        return b.Name.localeCompare(a.Name);
+                    })
+                    console.log(user);
                 }
-                return b.name.localeCompare(a.name);
-            })
-            console.log(user);
-        }
+        sortuser(users);
         
     </script>
 </body>
