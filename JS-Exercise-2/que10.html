@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function diffSubtract(dateStr1, dateStr2) {
+            function parseDate(dateStr) {
+                const [day, month, year] = dateStr.split('/');
+                return new Date(year, month - 1, day);
+            }
+
+            const d1 = parseDate(dateStr1);
+            const d2 = parseDate(dateStr2);
+
+            const totaldays = (d2 - d1) / (1000 * 60 * 60 * 24);
+            yr=parseInt(totaldays/365); 
+            daysafteryr=totaldays%365
+            mn=parseInt(daysafteryr/30)
+            dy=daysafteryr%30
+            console.log(yr+" years "+mn+" months "+dy+" days")
+
+            mn1=parseInt(totaldays/30)
+            dy1=totaldays%30
+            console.log("or "+mn1+" months "+dy1+" days ")
+
+            wk=parseInt(totaldays/7)
+            dy2=totaldays%7
+            console.log("or "+wk+" weeks "+dy2+" days ")
+
+            console.log("or "+totaldays+" days ")
+
+            console.log("or "+totaldays*24+" hours ")
+
+            console.log("or "+totaldays*24*60+" minutes ")
+        }
+
+        const input1 = "01/07/2018"; 
+        const input2 = "03/05/2020";
+
+        diffSubtract(input1, input2)
+
+
+    </script>
+</body>
+</html>

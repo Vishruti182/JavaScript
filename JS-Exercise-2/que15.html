@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = [
+            { Id: 1, Name: "Julia", Age: 25 },
+            { Id: 2, Name: "Bob", Age: 30 },
+            { Id: 3, Name: "Charlie", Age: 22 },
+            { Id: 4, Name: "Diana", Age: 25 },
+            { Id: 5, Name: "Evan", Age: 35 },
+            { Id: 6, Name: "Fiona", Age: 22 },
+            { Id: 7, Name: "George", Age: 40 },
+            { Id: 8, Name: "Hannah", Age: 30 },
+            { Id: 9, Name: "Ian", Age: 25 },
+            { Id: 10, Name: "Alice", Age: 29 }
+        ];
+        delete users[1];
+        console.log(users)
+        users[1]={Id: 2, Name: "Bobb", Age: 33 }
+        console.log(users)
+    </script>
+</body>
+</html>

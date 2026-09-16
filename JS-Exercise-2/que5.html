@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        array_a = [0,1,2,3];
+        array_b = [3,4,5];
+        //Output = union_array : [0,1,2,3,4,5] , a-b_array = [0,1,2], b-a_array = [4,5], intersection_array = [3]
+
+        function union(a,b){
+            union=[]
+            for(let i of a){
+                if(!union.includes(i)){
+                    union.push(i)
+                }
+            }
+            for(let i of b){
+                if(!union.includes(i)){
+                    union.push(i)
+                }
+            }
+            console.log(union)
+        }
+
+        function intersection(a,b){
+            intersection=[]
+            for(let i of a){
+                if(a.includes(i) && b.includes(i)){
+                    intersection.push(i)
+                }
+            }
+            console.log(intersection)
+        }
+
+        function difference(a,b){
+            diff=[]
+            for(let i of a){
+                if(!b.includes(i)){
+                    diff.push(i)
+                }
+            }
+            console.log(diff)
+        }
+
+        union(array_a, array_b)
+        intersection(array_a,array_b)
+        difference(array_a,array_b)
+        difference(array_b,array_a)
+
+    </script>
+</body>
+</html>
