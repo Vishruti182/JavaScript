@@ -7,10 +7,10 @@
 </head>
 <body>
     <script>
-        static_string = "This is a sample string"
-        input_string = "Insert me"
-        input_position = 3
-        op=static_string.substring(0,input_position-1)+input_string+static_string.substring(input_position-1,static_string.length)
+        const staticString = "This is a sample string"
+        const inputString = "Insert me"
+        let inputPosition = 3
+        let op=staticString.substring(0,inputPosition-1)+inputString+staticString.substring(inputPosition-1,staticString.length)
         console.log(op)
     </script>
 </body>

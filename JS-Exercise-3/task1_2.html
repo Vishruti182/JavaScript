@@ -8,12 +8,12 @@
 <body>
     <script>
         function masking(mail){
-            place=ip.indexOf("@");
-            mask_char=ip.substring(2,place).length
-            masked_mail=ip.slice(0,2)+"*".repeat(mask_char-1)+ip.slice(place-1,ip.length)
+            const place=ip.indexOf("@");
+            const mask_char=ip.substring(2,place).length
+            const masked_mail=ip.slice(0,2)+"*".repeat(mask_char-1)+ip.slice(place-1,ip.length)
             console.log(masked_mail)
         }
-        ip='abcdef@mail.com';
+        const ip='abcdef@mail.com';
         // op :  ab***f@mail.com​ 
         masking(ip);
     </script>

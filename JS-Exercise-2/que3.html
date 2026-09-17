@@ -7,14 +7,14 @@
 </head>
 <body>
     <script>
-        static_array = [0,1,1,2,3,4,5,5,5,6,7,7,8,9];
+        const staticArray = [0,1,1,2,3,4,5,5,5,6,7,7,8,9];
         let count={};
-        for(let i=0; i<static_array.length; i++){
-            if(static_array[i] in count){
-                count[static_array[i]]+=1;
+        for(let i=0; i<staticArray.length; i++){
+            if(staticArray[i] in count){
+                count[staticArray[i]]+=1;
             }
             else{
-                count[static_array[i]]=1;
+                count[staticArray[i]]=1;
             }
         }
         let max=0;

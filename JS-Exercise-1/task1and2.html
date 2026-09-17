@@ -7,11 +7,11 @@
 </head>
 <body>
     <script>
-        let num_rows=prompt("enter no. of rows");
-        for (let i = 0; i <= num_rows-1; i++) {
+        const numRows=prompt("enter no. of rows");
+        for (let i = 0; i <= numRows-1; i++) {
             let pattern = "";
-            for (let j = 0; j <= num_rows-1; j++) {
-                if(i==0 || i==num_rows-1 || j==0 || j==num_rows-1){
+            for (let j = 0; j <= numRows-1; j++) {
+                if(i==0 || i==numRows-1 || j==0 || j==numRows-1){
                     pattern += "* ";
                 }
                 else{
@@ -19,7 +19,7 @@
                 }
             }
             
-            console.log(pattern);
+            alert(pattern);
         }
     </script>
 </body>
