@@ -7,15 +7,16 @@
 </head>
 <body>
     <script>
-        function masking(mail){
-            const place=ip.indexOf("@");
-            const mask_char=ip.substring(2,place).length
-            const masked_mail=ip.slice(0,2)+"*".repeat(mask_char-1)+ip.slice(place-1,ip.length)
-            console.log(masked_mail)
+        function masking(mail,maskChar){
+            const place=mail.indexOf("@");
+            const char=parseInt(maskChar);
+            const maskedMail=mail.slice(0,2)+"*".repeat(char)+mail.slice(char+2,mail.length)
+            console.log(maskedMail);
         }
         const ip='abcdef@mail.com';
-        // op :  ab***f@mail.com​ 
-        masking(ip);
+        const maskChar=prompt('enter the no. of chars to mask');
+                // op :  ab***f@mail.com​ 
+        masking(ip,maskChar);
     </script>
 </body>
 </html>
