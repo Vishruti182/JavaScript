@@ -8,9 +8,9 @@
 <body>
     <script>
         const staticArray = [0,1,1,2,3,4,5,5,5,6,7,7,8,9];
-        let count={};
+        const count={};
         for(let i=0; i<staticArray.length; i++){
-            if(staticArray[i] in count){
+            if(Object.hasOwn(count,staticArray[i])){
                 count[staticArray[i]]+=1;
             }
             else{

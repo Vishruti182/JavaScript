@@ -19,9 +19,17 @@
             { Id: 9, Name: "Ian", Age: 25 },
             { Id: 10, Name: "Alice", Age: 29 }
         ];
-        delete users[1];
+        const posDel=prompt("enter position to delete");
+        const len=users.length;
+        if(posDel>=len){
+        alert('position not available');
+        }
+        else{
+        delete users[posDel];
         console.log(users)
-        users[1]={Id: 2, Name: "Bobb", Age: 33 }
+        }
+        const posAdd=prompt("enter position to add");
+        users[posAdd]={Id: 2, Name: "Bobb", Age: 33 }
         console.log(users)
     </script>
 </body>

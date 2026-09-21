@@ -7,11 +7,23 @@
 </head>
 <body>
     <script>
-        const Input = "01-07-2020"; 
-        const parts = Input.split("-");
-        const mon=["January","February","March","April","May","June","July","August","September","October","November","December"]
-        let m=parseInt(parts[1])
-        console.log(mon[m-1])
+        const Input = "01-08-2020"; 
+        const mon=["January","February","March","April","May","June","July","August","September","October","November","December"];
+        // let m=parseInt(parts[1]);
+        // console.log(mon[m-1]);
+        let obj;
+        if(Input.includes('/')){
+        const [day, month, year] = Input.split('/');
+        obj = new Date(year, month - 1, day);
+        }
+        else if(Input.includes('-')){
+        const [day, month, year] = Input.split('-');
+        obj = new Date(year, month - 1, day);
+        }
+        else{
+        alert('invalid format')
+        }
+        console.log(mon[obj.getMonth()]); 
     </script>
 </body>
 </html>
