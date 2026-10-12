@@ -1,0 +1,63 @@
+/* General Layout Structure - Left Aligned */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    margin: 20px;
+    padding: 0;
+}
+
+/* Input Fields - Raw & Flat */
+input[type="text"] {
+    width: 250px;
+    padding: 6px;
+    border: 1px solid #767676;
+    font-size: 14px;
+}
+
+input[type="text"]:focus {
+    outline: 2px solid #000000;
+}
+
+/* Structural Buttons */
+button {
+    font-size: 14px;
+    padding: 5px 12px;
+    cursor: pointer;
+    background-color: #f1f0f0;
+    border: 1px solid #767676;
+    color: #000000;
+}
+
+button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Main Form Button Specifics */
+#btn {
+    background-color: #3d3c3c;
+    color: #ffffff;
+    border: 1px solid #000000;
+    padding: 6px 20px;
+}
+
+#btn:hover {
+    background-color: #333333;
+}
+
+/* Data Grid / Table Layout */
+table {
+    width: 500px;
+    border-collapse: collapse;
+    margin-top: 20px;
+    border: 1px solid black;
+}
+th{background-color: #767676;
+
+}
+th, td {
+    padding: 8px;
+    text-align: left;
+    font-size: 14px;
+    border: 1px solid #000000; /* Standard flat black borders */
+}

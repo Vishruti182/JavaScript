@@ -1,0 +1,80 @@
+/* Clean Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 40px;
+}
+
+/* Left-aligned layout block */
+.container {
+    max-width: 400px;
+}
+
+.display-group {
+    margin-bottom: 30px;
+}
+
+h3 {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #707070;
+    margin-bottom: 4px;
+}
+
+h5 {
+    font-size: 24px;
+    font-weight: 500;
+    font-variant-numeric: tabular-nums; /* Prevents text shifting */
+    color: #000000;
+    margin-bottom: 24px;
+}
+
+/* Accent for the stopwatch display */
+#stopWatch {
+    font-weight: 700;
+}
+
+/* Buttons arranged in a simple row */
+.controls {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+button {
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #000000;
+    color: #f0eded;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+#startBtn:hover {
+    background-color: #333333;
+    border-color: #333333;
+}
+button:disabled{
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 500;
+    padding: 8px 16px;
+    border: 1px solid #e0e0e0;
+    border-radius: 4px;
+    background-color: #cfcbcb;
+    color: #000000;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
