@@ -1,0 +1,214 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #f5f5f5;
+    color: #333333;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+form {
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1a1a1a;
+    margin-bottom: 24px;
+}
+
+h5 {
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: #666666;
+    margin-top: 20px;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    font-weight: 600;
+    margin-left: 5px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+input[type="email"], input[type="text"], select {
+    width: 100%;
+    padding: 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    color: #333333;
+    font-size: 14px;
+    transition: border-color 0.2s, background-color 0.2s;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #000000;
+    background-color: #ffffff;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #333333;
+}
+
+br {
+    display: none;
+}
+
+body:has(#containerAdmin), body:has(#containerStd) {
+    background-color: #fafafa;
+    align-items: stretch;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+body:has(#containerAdmin) > h2, body:has(#containerStd) > h2 {
+    text-align: left;
+    font-size: 28px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 8px;
+}
+
+body:has(#containerAdmin) > input[type="text"] {
+    margin-bottom: 12px;
+}
+
+#assignCourse {
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+#assignCourse:hover {
+    background-color: #333333;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 24px;
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #999797;
+    color: #ffffff;
+    text-align: left;
+    padding: 14px 16px;
+    font-size: 13px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-align: center;
+}
+
+td {
+    padding: 14px 16px;
+    font-size: 14px;
+    border-bottom: 1px solid #7c7a7a;
+    color: #333333;
+    text-align: center;
+}
+
+tr:last-child td {
+    border-bottom: none;
+}
+
+td button {
+    background-color: #ffffff;
+    color: #333333;
+    border: 1px solid #a19d9d;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+td button:hover {
+    background-color: #000000;
+    color: #ffffff;
+    border-color: #000000;
+}
+
+#noCourse {
+    text-align: center;
+    font-size: 15px;
+    color: #777777;
+    padding: 24px;
+    background-color: #ffffff;
+    border: 1px dashed #cccccc;
+    border-radius: 6px;
+    margin-top: 24px;
+}
+
+#signOutBtn {
+    background-color: transparent;
+    color: #555555;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    padding: 10px 16px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 24px;
+    align-self: center;
+    transition: all 0.2s;
+}
+
+#signOutBtn:hover {
+    background-color: #ffffff;
+    color: #000000;
+    border-color: #000000;
+}
